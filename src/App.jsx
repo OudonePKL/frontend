@@ -9,7 +9,7 @@ function App() {
       redirect: "follow",
     };
 
-    fetch(import.meta.env.VITE_API + "/allUsers", requestOptions)
+    fetch("http://13.228.25.34:3001/allUsers", requestOptions)
       .then((response) => response.json())
       .then((result) => {
         if (result.status === "Success") {
